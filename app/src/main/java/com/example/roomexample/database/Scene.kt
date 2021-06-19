@@ -1,8 +1,8 @@
 package com.example.roomexample.database
 
-import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+
 
 @Entity
 data class Scene(
@@ -11,9 +11,11 @@ data class Scene(
     var address: String,
     var photoId: Int,
     var description: String,
+    var date: String,
     var photoFile: String = "",  //for the external photo file
     @PrimaryKey(autoGenerate = true)
     var id: Long = 0L,
+
 ) {
 //    @PrimaryKey(autoGenerate = true)
 //    var id: Long = 0L

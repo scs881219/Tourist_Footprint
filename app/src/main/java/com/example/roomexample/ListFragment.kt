@@ -40,7 +40,6 @@ class ListFragment : Fragment() {
         //get the shared viewModel associated with the activity
         viewModel = ViewModelProvider(requireActivity(),
             MyViewModelFactory(requireActivity().application)).get(MyViewModel::class.java)
-        (activity as AppCompatActivity?)!!.supportActionBar!!.hide()
         //setup RecyclerView
         val layoutManager = LinearLayoutManager(this.activity)
         binding.recyclerView.layoutManager = layoutManager
@@ -51,6 +50,7 @@ class ListFragment : Fragment() {
         //setup swipe handler
         val swipeHandler = ItemTouchHelper(SwipeHandler(adapter,0,(ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT)))
         swipeHandler.attachToRecyclerView(binding.recyclerView)
+
 
         binding.viewModel = viewModel
         binding.lifecycleOwner = viewLifecycleOwner

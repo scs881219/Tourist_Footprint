@@ -71,8 +71,4 @@
             android:id="@+id/action_startFragment_to_listFragment"
             app:destination="@id/listFragment" />
     </fragment>
-    <activity
-        android:id="@+id/splashActivity"
-        android:name="com.example.roomexample.SplashActivity"
-        android:label="SplashActivity" />
 </navigation>
