@@ -8,4 +8,8 @@
     <color name="background2">#f5f5dc</color>
     <color name="background3">#CFE9FF</color>
     <color name="background4">#A770EF</color>
+    <color name="button1">#29A62E</color>
+    <color name="transparent">#00000000</color>
+
+
 </resources>

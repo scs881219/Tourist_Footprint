@@ -20,12 +20,13 @@
         android:layout_marginEnd="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
+        android:elevation="10dp"
         app:cardCornerRadius="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="6dp"
             android:background="@drawable/button_selector"
             android:orientation="horizontal">
 
@@ -35,7 +36,7 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:elevation="4dp"
+                android:elevation="8dp"
                 app:cardCornerRadius="10dp">
                 <ImageView
                     android:id="@+id/ball_icon"

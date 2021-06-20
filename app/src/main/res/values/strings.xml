@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Travel Record</string>
+    <string name="app_name">Travel Footprint</string>
 
     <string-array name="city_array">
         <item>花蓮縣</item>
@@ -41,5 +41,9 @@
     <string name="description">Description</string>
     <string name="add_a_new_scene">Enter the detail</string>
     <string name="photo">Photo</string>
+    <string name="input_date">日期:</string>
+    <string name="thought">感受:</string>
+    <string name="show_on_the_map">Show on the map</string>
+    <string name="get_current_weather">Get Current Weather</string>
 
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@android:color/holo_green_light" />
+    <item android:drawable="@drawable/gradient5" />
     <item
-        android:drawable="@drawable/ic_round_menu_book_24"
+        android:drawable="@drawable/ic_baseline_emoji_transportation_24"
         android:gravity="center" />
 </layer-list>
