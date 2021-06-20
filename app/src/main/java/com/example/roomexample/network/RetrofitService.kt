@@ -13,7 +13,7 @@ import retrofit2.http.Query
 */
 
 private const val API_URL = "https://opendata.cwb.gov.tw/api/v1/rest/datastore/"
-private const val API_KEY = "CWB-314B5DE4-2F1D-4927-AB85-D1B6EC7989D7"
+private const val API_KEY = "CWB-1B8DA7D7-BE76-4907-BEF3-F2D00517D651"
 
 private val moshi = Moshi.Builder()
     .add(KotlinJsonAdapterFactory())

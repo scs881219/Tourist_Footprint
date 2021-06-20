@@ -13,6 +13,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/background"
         app:layout_constraintVertical_chainStyle="spread"
         tools:context=".AddFragment">
 
@@ -20,8 +21,8 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add a new scene"
-            android:textSize="24sp"
+            android:text="@string/add_a_new_scene"
+            android:textSize="38sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -31,72 +32,87 @@
 
         <Spinner
             android:id="@+id/city_picker"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
             android:layout_marginTop="32dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.144"
-            app:layout_constraintStart_toStartOf="parent"
+            android:paddingStart="12dp"
+            app:layout_constraintStart_toStartOf="@+id/name_edit"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <EditText
             android:id="@+id/name_edit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
             android:ems="10"
-            android:hint="Name"
+            android:drawableStart="@drawable/ic_baseline_add_location_alt_24"
+            android:paddingStart="12dp"
+            android:drawablePadding="12dp"
+            android:hint="@string/name"
             android:text="@{scene.name}"
             android:inputType="textPersonName"
-            app:layout_constraintStart_toStartOf="@+id/city_picker"
             app:layout_constraintTop_toBottomOf="@+id/city_picker" />
 
         <EditText
             android:id="@+id/address_edit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
             android:ems="10"
-            android:hint="Address"
+            android:drawableStart="@drawable/ic_baseline_add_location_24"
+            android:paddingStart="12dp"
+            android:drawablePadding="12dp"
+            android:hint="@string/address"
             android:text="@{scene.address}"
             android:inputType="textPersonName"
-            app:layout_constraintStart_toStartOf="@+id/name_edit"
             app:layout_constraintTop_toBottomOf="@+id/name_edit" />
-
-        <EditText
-            android:id="@+id/date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:ems="10"
-            android:hint="Date"
-            android:inputType="date"
-            android:text="@{scene.date}"
-            app:layout_constraintStart_toStartOf="@+id/descript_edit"
-            app:layout_constraintTop_toBottomOf="@+id/descript_edit" />
-
-        <EditText
-            android:id="@+id/descript_edit"
-            android:layout_width="341dp"
-            android:layout_height="47dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="16dp"
-            android:ems="10"
-            android:hint="Description"
-            android:inputType="textMultiLine|textPersonName"
-            android:text="@{scene.description}"
-            app:layout_constraintStart_toStartOf="@+id/sel_button"
-            app:layout_constraintTop_toBottomOf="@+id/sel_button" />
 
         <Button
             android:id="@+id/sel_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:drawableLeft="@android:drawable/ic_menu_camera"
-            android:text="@{scene.date}"
+            android:drawableStart="@android:drawable/ic_menu_camera"
+            android:background="@drawable/gradient3"
+            android:hint="@string/photo"
             app:layout_constraintStart_toStartOf="@+id/address_edit"
             app:layout_constraintTop_toBottomOf="@+id/address_edit" />
+
+        <EditText
+            android:id="@+id/descript_edit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:ems="10"
+            android:drawableStart="@drawable/ic_baseline_notes_24"
+            android:paddingStart="12dp"
+            android:drawablePadding="12dp"
+            android:hint="@string/description"
+            android:inputType="textMultiLine|textPersonName"
+            android:text="@{scene.description}"
+            app:layout_constraintTop_toBottomOf="@+id/sel_button" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:ems="10"
+            android:drawableStart="@drawable/ic_baseline_date_range_24"
+            android:paddingStart="12dp"
+            android:drawablePadding="12dp"
+            android:hint="@string/date"
+            android:inputType="date"
+            android:text="@{scene.date}"
+            app:layout_constraintTop_toBottomOf="@+id/descript_edit" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
