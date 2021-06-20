@@ -14,26 +14,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@color/background3"
         tools:context=".DetailFragment">
 
         <TextView
             android:id="@+id/title_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:text="@{scene.name}"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textSize="25sp" />
+
+
+
 
         <ImageView
             android:id="@+id/image_pic"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
             android:scaleType="centerCrop"
             app:setImage="@{scene}"
             app:asIcon="@{false}"
-            tools:src="@drawable/photo0_0" />
+            tools:src="@drawable/photo1_1" />
 
         <Button
             android:id="@+id/map_button"

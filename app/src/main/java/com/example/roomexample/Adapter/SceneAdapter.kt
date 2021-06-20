@@ -2,17 +2,12 @@ package com.example.roomexample.Adapter
 
 import android.app.AlertDialog
 import android.content.Context
-import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.ImageView
-import androidx.databinding.BindingAdapter
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
 import com.example.roomexample.ListFragmentDirections
 import com.example.roomexample.MyViewModel
 import com.example.roomexample.database.Scene

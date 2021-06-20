@@ -6,31 +6,46 @@
     <data>
         <variable name="scene"
             type="com.example.roomexample.database.Scene"/>
-
     </data>
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
-
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="10dp"
+        app:cardElevation="2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/button_selector">
         <ImageView
             android:id="@+id/ball_icon"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/background"
             android:scaleType="centerCrop"
             app:setImage="@{scene}"
             app:asIcon="@{true}"
-            tools:srcCompat="@drawable/photo0_0" />
+            tools:srcCompat="@drawable/photo1_1"/>
 
         <TextView
             android:id="@+id/scene_name"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@{scene.name}"
-            android:textSize="24sp" />
+            android:textAlignment="center"
+            android:textSize="33sp"
+            android:textStyle="bold"
+            />
+        </LinearLayout>
 
-    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 </layout>

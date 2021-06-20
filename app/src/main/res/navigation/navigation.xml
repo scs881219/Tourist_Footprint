@@ -6,6 +6,16 @@
     app:startDestination="@id/startFragment">
 
     <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.roomexample.StartFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+
+    <fragment
         android:id="@+id/listFragment"
         android:name="com.example.roomexample.ListFragment"
         android:label="List of Scenes"
@@ -35,7 +45,7 @@
     <fragment
         android:id="@+id/addScene"
         android:name="com.example.roomexample.AddFragment"
-        android:label="fragment_add"
+        android:label="Add New Scene"
         tools:layout="@layout/fragment_add" >
         <argument
             android:name="rawId"
@@ -44,7 +54,7 @@
     <fragment
         android:id="@+id/mapFragment"
         android:name="com.example.roomexample.MapFragment"
-        android:label="MapFragment"
+        android:label="Location"
         tools:layout="@layout/fragment_map">
         <argument
             android:name="name"
@@ -56,19 +66,11 @@
     <fragment
         android:id="@+id/weatherFragment"
         android:name="com.example.roomexample.WeatherFragment"
-        android:label="WeatherFragment"
+        android:label="Current Weather"
         tools:layout="@layout/fragment_weather">
         <argument
             android:name="city"
             app:argType="string" />
     </fragment>
-    <fragment
-        android:id="@+id/startFragment"
-        android:name="com.example.roomexample.StartFragment"
-        android:label="fragment_start"
-        tools:layout="@layout/fragment_start" >
-        <action
-            android:id="@+id/action_startFragment_to_listFragment"
-            app:destination="@id/listFragment" />
-    </fragment>
+
 </navigation>
